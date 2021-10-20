@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+body {
+  background-image: url("../assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 24px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #d7d7df;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Zilla Slab Highlight', cursive; */
+
+header .socials {
+  width: 20%;
+  color: #fff;
+  padding: 1em;
+}
+
+header .fa-facebook,
+header .fa-instagram {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+
+header .socials a:hover {
+  color: rgb(221, 255, 0);
+}
+
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 80%;
+  padding: 1em;
+}
+
+header .navbar li {
+  list-style: none;
+}
+
+header .navbar li a {
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header .navbar li a:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+main {
+  width: 100%;
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: -1.5em;
+}
+
+main .content img {
+  width: 38%;
+}
+
+main .content h1 {
+  font-family: "Zilla Slab Highlight", cursive;
+  font-size: 5rem;
+  margin: 0;
+  color: #fff;
+}
+
+main .content p {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+main .content button {
+  border: none;
+  background-color: #15446d;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+main .content button:hover {
+  background-color: #0074d9;
+}
+
+.swal-modal {
+  background-color: rgb(22, 37, 68);
+}
+
+.swal-modal .swal-text {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.swal-button {
+  background-color: #fff;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 730px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .socials {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  header .navbar {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .content img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  header .navbar li a {
+    font-size: 1rem;
+  }
+  main .content {
+    width: 100%;
+  }
+  main .content img {
+    width: 100%;
+  }
+}
