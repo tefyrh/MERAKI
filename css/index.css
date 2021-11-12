@@ -41,13 +41,18 @@ header .socials {
 }
 
 header .fa-facebook,
-header .fa-instagram {
-  font-size: 2rem;
+header .fa-instagram,
+header .fa-whatsapp {
+  font-size: 1.7rem;
   padding: 0.5em;
+  transition: 0.5s;
 }
 
-header .socials a:hover {
-  color: rgb(221, 255, 0);
+header .socials a:hover > .fa-facebook,
+header .socials a:hover > .fa-instagram,
+header .socials a:hover > .fa-whatsapp {
+  color: rgb(98, 181, 65);
+  transform: scale(1.5);
 }
 
 header .navbar {
